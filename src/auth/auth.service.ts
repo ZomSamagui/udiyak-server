@@ -51,6 +51,7 @@ export class AuthService {
     return {
       status: HttpStatus.OK,
       message: '회원가입 성공',
+      data: { user },
     };
   }
 
