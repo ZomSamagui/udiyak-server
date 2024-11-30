@@ -94,7 +94,7 @@ export class AuthService {
       return {
         status: HttpStatus.OK,
         message: '토큰 재발급 성공',
-        data: { accessTokne: newAccessToken },
+        data: { accessToken: newAccessToken },
       };
     } catch (error) {
       throw new HttpException(
