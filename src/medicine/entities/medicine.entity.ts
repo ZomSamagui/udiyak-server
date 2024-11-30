@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-@Entity('medicine') // 데이터베이스 테이블 이름
+@Entity('medicines') // 데이터베이스 테이블 이름
 export class Medicine {
   @PrimaryGeneratedColumn()
   id: number; // 약 ID
