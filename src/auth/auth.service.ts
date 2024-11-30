@@ -78,7 +78,15 @@ export class AuthService {
     return {
       status: HttpStatus.OK,
       message: '로그인 성공',
-      data: { accessToken: accessToken, refreshToken: refreshToken },
+      data: {
+        accessToken: accessToken,
+        refreshToken: refreshToken,
+        user: {
+          email: user.email,
+          nickname: user.nickname,
+          password: user.password,
+        },
+      },
     };
   }
 
